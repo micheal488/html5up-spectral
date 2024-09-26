@@ -1,4 +1,4 @@
-const verify=JSON.parse(sessionStorage.getItem('SignUP'))
+const verify=JSON.parse(sessionStorage.getItem('verify'))
 const form_post = document.querySelector('form')
 console.log(form_post);
 // const userDetails = {
@@ -8,7 +8,7 @@ console.log(form_post);
 // console.log(userDetails);
 // console.log(form_post);
 const Verify={
-    USERname: verify.USERname.value
+    // USERname: verify.USERname.value
 }
 console.log(verify);
 function login (event){

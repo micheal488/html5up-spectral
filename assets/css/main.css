@@ -120,6 +120,17 @@ input, select, textarea {
 			}
 
 		}
+		/* @media screen and (min-width: 500px) {
+
+			#Text, #Password{
+				width: 70vw;
+				background-color: #00ffcc; */
+				/* align-self: center;
+				justify-self: center; */
+				/* margin-left: 20%;
+			}
+			
+		} */
 
 		@media screen and (max-width: 1280px) {
 

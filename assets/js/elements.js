@@ -1,15 +1,19 @@
 const SignUp=document.querySelector('form')
 const UserName=document.getElementById('Text')
-const Pass_Word=document.getElementById('Password')
-console.log(Pass_Word);
+const PassWord=document.getElementById('Password')
+// console.log(Pass_Word);
 const Signup={
-    USERname: UserName.value,
-    PASSword: Pass_Word.value
+    Username: UserName.value,
+    Password: PassWord.value
 }
 console.log(Signup);
 function Signin(event){
     event.preventDefault()
-    sessionStorage.setItem('Signup',JSON.stringify(SignUp))
+    const verify={
+        username: Signup.Username.value,
+        password: Signup.Password.value
+    }
+    sessionStorage.setItem('string', JSON.stringify(verify))
     location.href='../index.html'
 }
 SignUp.addEventListener('submit',Signin)
